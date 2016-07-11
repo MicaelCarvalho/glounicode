@@ -3,25 +3,25 @@ import Web.Scotty
 
 import qualified Data.Text.Lazy as T
 
-import Glounicode
+import Meownicode
 
 main = scotty 3000 $ do
   get "/" $ do
     setHeader "content-type" "text/html"
-    file "glounicode.html"
+    file "meownicode.html"
 
   get "/encode" $ do
     setHeader "content-type" "text/html"
-    file "glouencode.html"
+    file "meowencode.html"
 
   post "/encode" $ do
     paramString <- param "data"
-    text . T.pack $ unwords $ glouencode paramString
+    text . T.pack $ unwords $ meowencode paramString
 
   get "/decode" $ do
     setHeader "content-type" "text/html"
-    file "gloudecode.html"
+    file "meowdecode.html"
 
   post "/decode" $ do
     paramString <- param "data"
-    text . T.pack $ gloudecode $ words paramString
+    text . T.pack $ meowdecode $ words paramString

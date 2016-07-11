@@ -1,11 +1,11 @@
-name:                glounicode
+name:                meownicode
 version:             0.1.0.0
 -- synopsis:            
 -- description:         
 license:             GPL-3
 license-file:        LICENSE
-author:              npmiller
-maintainer:          nicolas.pierre.miller@gmail.com
+author:              npmiller, mcarvalho
+maintainer:          nicolas.pierre.miller@gmail.com (glounicode), micael.carvalho@lip6.fr (meownicode)
 -- copyright:           
 category:            Text
 build-type:          Simple
@@ -13,15 +13,15 @@ extra-source-files:  README.md
 cabal-version:       >=1.10
 
 library
-  exposed-modules:     Glounicode
+  exposed-modules:     Meownicode
   -- other-modules:       
   other-extensions:    OverloadedStrings
   build-depends:       base >=4.7 && <4.8, text
   -- hs-source-dirs:      
   default-language:    Haskell2010
 
-executable glou
-  main-is: Glou.hs
+executable meow
+  main-is: Meow.hs
   -- other-modules:       
   other-extensions:    OverloadedStrings
   build-depends:       base >=4.7 && <4.8, text, cmdargs

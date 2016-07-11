@@ -1,4 +1,4 @@
-Glounicode
+Meownicode
 ==========
 
 Glounicode is a library that encodes unicode strings using “glou”.
